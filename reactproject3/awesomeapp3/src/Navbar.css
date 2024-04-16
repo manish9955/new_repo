@@ -1,0 +1,11 @@
+
+@media(max-width:600px){
+.collapse {
+    z-index: 1;
+}
+
+ }
+.main-container{
+    
+    margin-bottom: -40px;
+}
