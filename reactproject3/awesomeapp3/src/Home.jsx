@@ -13,7 +13,8 @@ function Home() {
           <div className="row">
             <div className="col-10 mx-auto">
             <div className="row">
-             <div className="col-md-6 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column center brand" >
+             <div className="col-md-6 pt-lg-0 order-2 order-lg-1 
+             d-flex justify-content-center flex-column center brand" >
               <h1> Grow your business with <strong className="brand-name"><br/> Mk Advertisers</strong>
               </h1>
               <div className="header">

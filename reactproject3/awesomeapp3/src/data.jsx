@@ -24,7 +24,7 @@ const Sdata =[
     {
         imgsrc:sd,
         title:"Software development",
-        btn:"/about"
+        btn:"Cart"
     },
     {
         imgsrc:dm,

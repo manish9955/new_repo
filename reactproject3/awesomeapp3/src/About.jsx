@@ -8,17 +8,16 @@ import app from "../src/manish.jpeg";
 
 function About() {
   const[data,setData] = useState([])
-  useEffect(()=>{
-   getUser()
+  const[sdata,setSdata] =useState([])
 
-
-  },[])
+  useEffect(()=>{getUser()},[])
   
   function getUser(){
    fetch('http://localhost:8081/users')
   .then(res=> res.json())
   .then(data => setData(data))
-  .catch(err => console.log(err))
+  .catch(err => console.log(err)) 
+  console.log(data)
  }
  
   function deleteUser(id){
@@ -33,6 +32,18 @@ function About() {
    
    
   }
+  
+  /*function search(event){
+      const name =event.target.name.value;
+
+      fetch(`http://localhost:8081/users/search/${name}`,{
+      method:'GET'
+     })
+   .then(res=> res.json())
+   .then(sdata => setSdata(sdata))
+   .catch(err => console.log(err))
+  }
+*/
 
   function updateUser(id){
    alert(id)
@@ -43,7 +54,7 @@ return(
 <>
 <div className='container1'>
     <div className='about_profile'><h5>
-สวัสดี ! นี่มันแย่มาก ผู้ก่อตั้ง <span className='span'>mk Advertiser</span> ฉันยินดีต้อนรับทุกท่านสำหรับบริการของฉัน</h5></div>
+     สวัสดี ! นี่มันแย่มาก ผู้ก่อตั้ง <span className='span'>mk Advertiser</span> ฉันยินดีต้อนรับทุกท่านสำหรับบริการของฉัน</h5></div>
     <div className='profile'>
         <img src={app} alt='profile_pic'/>
     </div>
@@ -53,12 +64,15 @@ return(
   
 <div className='about_class'>
 <h3>Our Customers</h3>
+   
+   
    <table>
      <thead>
        
         <th>Name</th>
         <th>Phone</th>
         <th>Email</th>
+        
         
      </thead>
      <tbody>

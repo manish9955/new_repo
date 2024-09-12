@@ -55,6 +55,7 @@ const formSubmit=(event)=>{
 
     return(
       <>
+      <div className='wrapper1'>
       <div className='wrapper'>
         <div className="my-5">
           <h1 className="text-center">Contact Us</h1>
@@ -85,7 +86,7 @@ const formSubmit=(event)=>{
               </div>
 
               <div className="col-12">
-                  <button class="btn btn-outline-primary" type="submit">Submit form</button>
+                  <button className="btn btn-outline-primary" type="submit">Submit form</button>
               </div>
             </form>
 
@@ -93,6 +94,7 @@ const formSubmit=(event)=>{
           </div>
         </div>
       </div> 
+      </div>
       </>
     );
    };

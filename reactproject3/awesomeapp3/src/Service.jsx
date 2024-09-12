@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import Sdata from "./data";
+import { Link } from "react-router-dom";
 
 
 
@@ -9,7 +10,7 @@ import Sdata from "./data";
 function Service() {
     return(
       <>
-
+     
        <div className="my-5">
           <h1 className="text-center">Our Services</h1>
        </div>
@@ -22,7 +23,7 @@ function Service() {
                 return <Card  key={ind} imgsrc={val.imgsrc} title={val.title} btn={val.btn}/>
               })
             }
-
+          
             </div>
           </div>
         </div>

@@ -71,8 +71,18 @@
    .header h4{
     font-size:17px;
    }
+   .brand h1{
+    position: relative;
+    left: -11px;
+   }
    #header{
-    margin-top: =10px;
+    margin-top: 10px;
+   }
+   .main{
+  
+    height: 500px;
+    width: 100%;
+    
    }
   }
 

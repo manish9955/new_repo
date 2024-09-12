@@ -9,7 +9,7 @@ import Navbar from "./Navbar";
 import Card from "./Card";
 import Contact from "./Contact";
 import Pokemon from "./Pokemon";
-import {Switch,Route,Redirect} from "react-router-dom";
+import {Switch,Route,Redirect, Routes} from "react-router-dom";
 
 
 
@@ -19,18 +19,13 @@ function App() {
     <>
    <Navbar/>
    
-   
-   
-   <Switch>
-
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/about" component={About}/>
-        <Route exact path="/service" component={Service}/>
-        <Route exact path="/contact" component={Contact}/>
-        <Redirect to="/"></Redirect>
-      
-        
-    </Switch>
+   <Routes>
+        <Route  path="/" element={<Home/>}/>
+        <Route  path="/home" element={<Home/>}/>
+        <Route exact path="/about" element={<About/>}/>
+        <Route exact path="/service" element={<Service/>}/>
+        <Route exact path="/contact" element={<Contact/>}/>          
+   </Routes>
    
     
     </>
